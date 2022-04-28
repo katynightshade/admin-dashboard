@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20vw 65vw 15vw;
+    grid-template-rows: 16vh 42vh 42vh;
+}
+
+.sidebar {
+    grid-row: 1 / 4;
+    background-color: #6d28d9;
+    color: white;
+}
+
+.header {
+    grid-column: 2 / 4;
+}
+
+.projects {
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+.announcements {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.trending {
+    grid-area: 3 / 3 / 4 / 4;
+}
