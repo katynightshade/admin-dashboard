@@ -9,6 +9,21 @@ html, body {
     background-color: #fce7f3;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(113, 111, 111);
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
 p, h1, h2, h3, h4, h5 {
     margin: 0;
 }
@@ -142,11 +157,11 @@ input {
     height: 100%;
 }
 
-.profile-head > p {
+.greet {
     grid-area: 1 / 2 / 2 / 3;
 }
 
-.profile-head > h2 {
+.profile-name {
     grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -181,6 +196,20 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     overflow: auto;
+}
+
+.projects-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.projects-list::-webkit-scrollbar-thumb {
+    background-color: rgb(113, 111, 111);
+    border-radius: 3px;
+}
+
+.projects-list::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 3px;
 }
 
 .card {
