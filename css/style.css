@@ -6,7 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    background-color: #f8d6e9;
+    background-color: #e5caf5;
 }
 
 body::-webkit-scrollbar {
@@ -84,7 +84,7 @@ p, h1, h2, h3, h4, h5 {
     gap: 15px;
 }
 
-.site-nav > ul > li > img, .account-nav> ul > li > img, .alert {
+.site-nav > ul > li > img, .account-nav> ul > li > img {
     max-width: 20px;
 }
 
@@ -177,7 +177,7 @@ input {
 }
 
 button {
-    background-color: #ec4899;
+    background-color: #b048ec;
     color: white;
     border: none;
     border-radius: 15px;
@@ -319,11 +319,65 @@ button {
 }
 
 @media only screen and (min-width: 480px) {
-
+    .container {
+        grid-template-rows: 5vh 11vh 42vh 42vh;
+    }
+    .greet {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .profile-name {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+    .profile-head >img {
+        grid-area: 1 / 1 / 4 / 2;
+        max-height: 100%;
+    }
+    button {
+        font-size: 20px;
+        font-weight: normal;
+        border-radius: 20px;
+    }
+    .trending {
+        padding-top: 0;
+    }
+    .trend {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-
+    .container {
+        grid-template-rows: 5vh 8vh 42vh 42vh;
+    }
+    .sidebar {
+        padding: 7px;
+    }
+    .link-home > img {
+        width: 4vw;
+    }
+    form {
+        top: 5px;
+    }
+    .alert {
+        width: 3.5vw;
+        top: 1.3vh;
+        right: 15vw;
+    }
+    .profile-btns {
+        position: absolute;
+        top: 1vh;
+        right: 3vw;
+    }
+    button {
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .projects {
+        padding-top: 45px;
+    }
+    .announcements {
+        padding-top: 45px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
